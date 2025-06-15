@@ -18,6 +18,7 @@ const Header = () => {
   const navLinks = [
     { href: '#studio', label: 'Lo Studio' },
     { href: '#chi-siamo', label: 'Chi Siamo' },
+    { href: '#professionisti', label: 'I Nostri Professionisti' },
     { href: '#aree-di-attivita', label: 'Aree di Attività' },
     { href: '#contatti', label: 'Contatti' },
   ];
