@@ -41,7 +41,7 @@ const Contact = () => {
         </div>
         <div className="h-80 md:h-full rounded-lg overflow-hidden shadow-xl">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89348.4239851689!2d9.600424697265624!3d45.698263000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781511257425169%3A0x75B46747E5334114!2sCitt%C3%A0%20Alta%2C%20Bergamo%20BG!5e0!3m2!1sit!2sit!4v1684238123456!5m2!1sit!2sit"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.945415392176!2d9.65526637688229!3d45.69234191410118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781510688c2646d%3A0x46387085732c3f8!2sVia%20Palma%20il%20Vecchio%2C%2018%2C%2024128%20Bergamo%20BG!5e0!3m2!1sit!2sit!4v1718454930327!5m2!1sit!2sit"
             width="100%"
             height="100%"
             style={{ border: 0 }}
