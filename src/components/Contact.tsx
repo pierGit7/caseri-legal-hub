@@ -21,13 +21,17 @@ const Contact = () => {
             <Button className="w-full bg-primary hover:bg-primary/90">Invia Messaggio</Button>
           </form>
           <div className="mt-8 space-y-4">
-             <a href="mailto:info@studiocaseri.it" className="flex items-center space-x-3 text-foreground hover:text-accent transition-colors">
+            <a href="mailto:caserivinicio@libero.it" className="flex items-center space-x-3 text-foreground hover:text-accent transition-colors">
               <Mail className="w-5 h-5 text-accent" />
-              <span>info@studiocaseri.it</span>
+              <span>caserivinicio@libero.it</span>
             </a>
-            <a href="tel:+390123456789" className="flex items-center space-x-3 text-foreground hover:text-accent transition-colors">
+            <a href="mailto:avv.lorenzocaseri@outlook.it" className="flex items-center space-x-3 text-foreground hover:text-accent transition-colors">
+              <Mail className="w-5 h-5 text-accent" />
+              <span>avv.lorenzocaseri@outlook.it</span>
+            </a>
+            <a href="tel:+39035254135" className="flex items-center space-x-3 text-foreground hover:text-accent transition-colors">
               <Phone className="w-5 h-5 text-accent" />
-              <span>+39 0123 456789</span>
+              <span>+39 035-254135</span>
             </a>
             <a href="#" className="flex items-center space-x-3 text-foreground hover:text-accent transition-colors">
               <Linkedin className="w-5 h-5 text-accent" />
