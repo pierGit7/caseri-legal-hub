@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -64,9 +63,23 @@ const History = () => {
           </Carousel>
         </div>
 
-        <p className="max-w-3xl mx-auto text-lg text-foreground/80 leading-relaxed">
-          Fondato nel 1986, lo Studio Legale Caseri ha costruito la sua reputazione sulla solida esperienza e un approccio personalizzato. Da decenni offriamo consulenza e assistenza legale ai nostri clienti, guidandoli con professionalità attraverso complesse questioni legali. La nostra storia è un percorso di continua crescita e aggiornamento, sempre con l'obiettivo di garantire la migliore tutela possibile in ogni circostanza.
-        </p>
+        <div className="max-w-3xl mx-auto text-lg text-foreground/80 leading-relaxed text-left space-y-6">
+          <p>
+            Lo Studio, fondato dall'Avv. Vinicio Caseri ed oggi giunto alla seconda generazione con l'Avv. Lorenzo Caseri, da quasi quarant'anni si distingue per l'eccellenza e la dedizione con cui offre consulenza e assistenza legale ai propri clienti.
+          </p>
+          <p>
+            Situato nel cuore di Bergamo, ma con possibilità di ricevere i clienti anche a Treviglio, lo Studio si impegna a fornire servizi legali di alta qualità, mirati a rispondere efficacemente alle esigenze dei clienti.
+          </p>
+          <p>
+            Nel corso dell'incontro preliminare, i professionisti procederanno ad una approfondita analisi del caso sottoposto, seguita dall'indicazione dei possibili sviluppi della pratica, della sua complessità e dei compensi e costi preventivabili.
+          </p>
+          <p>
+            A quel punto, l'interessato sarà posto nella condizione di valutare, in maniera consapevole, se conferire l'incarico, pattuendo termini e condizioni in forma scritta per regolare con chiarezza e trasparenza il rapporto con l'Avvocato.
+          </p>
+          <p>
+            Durante lo svolgimento della pratica, lo Studio informerà costantemente il cliente sugli sviluppi della stessa.
+          </p>
+        </div>
       </div>
     </section>
   );
