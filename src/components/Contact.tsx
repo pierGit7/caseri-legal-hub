@@ -1,11 +1,14 @@
 
 import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Linkedin, Mail, Phone } from 'lucide-react';
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("YOUR_FORM_ID_HERE");
+
   return (
     <section id="contatti" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12">
@@ -14,12 +17,32 @@ const Contact = () => {
           <p className="text-foreground/80 mb-8">
             Per fissare un appuntamento o per richiedere una consulenza, non esitate a contattarci. Saremo lieti di assistervi.
           </p>
-          <form className="space-y-4">
-            <Input type="text" placeholder="Il Tuo Nome" />
-            <Input type="email" placeholder="La Tua Email" />
-            <Textarea placeholder="Il Tuo Messaggio" />
-            <Button className="w-full bg-primary hover:bg-primary/90">Invia Messaggio</Button>
-          </form>
+          
+          {state.succeeded ? (
+            <div className="p-4 bg-green-100 border border-green-200 text-green-800 rounded-lg">
+              <h3 className="font-bold">Messaggio inviato!</h3>
+              <p>Grazie per averci contattato. Ti risponderemo al più presto.</p>
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <Input id="name" type="text" name="name" placeholder="Il Tuo Nome" required />
+                <ValidationError field="name" errors={state.errors} className="text-destructive text-sm mt-1" />
+              </div>
+              <div>
+                <Input id="email" type="email" name="email" placeholder="La Tua Email" required />
+                <ValidationError field="email" errors={state.errors} className="text-destructive text-sm mt-1" />
+              </div>
+              <div>
+                <Textarea id="message" name="message" placeholder="Il Tuo Messaggio" required />
+                <ValidationError field="message" errors={state.errors} className="text-destructive text-sm mt-1" />
+              </div>
+              <Button type="submit" disabled={state.submitting} className="w-full bg-primary hover:bg-primary/90">
+                {state.submitting ? 'Invio in corso...' : 'Invia Messaggio'}
+              </Button>
+            </form>
+          )}
+
           <div className="mt-8 space-y-4">
             <a href="mailto:caserivinicio@libero.it" className="flex items-center space-x-3 text-foreground hover:text-accent transition-colors">
               <Mail className="w-5 h-5 text-accent" />
