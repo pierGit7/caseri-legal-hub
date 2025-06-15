@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=3506')" }}>
+    <section className="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center" style={{ backgroundImage: "url('/lovable-uploads/4dfd88b9-d133-47fa-9801-6d6956069f84.png')" }}>
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative z-10 p-4 animate-fade-in">
         <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight">Assistenza legale dal 1986</h1>
