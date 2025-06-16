@@ -1,8 +1,9 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "caseri-legal-hub",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://pierGit7.github.io/caseri-legal-hub",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -84,6 +85,5 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
-  },
-  "homepage": "https://pierGit7.github.io/caseri-legal-hub"
+  }
 }
