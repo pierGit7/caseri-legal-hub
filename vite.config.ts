@@ -3,11 +3,10 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// Replace with your actual GitHub repo name
-const repoName = 'caseri-legal-hub'; // e.g., 'my-portfolio'
+const repoName = 'caseri-legal-hub';
 
-export default defineConfig(({ mode }) => ({
-  base: `/caseri-legal-hub`,
+export default defineConfig(({ command, mode }) => ({
+  base: command === 'build' ? `/${repoName}/` : '/',
   server: {
     host: "::",
     port: 8080,
