@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 const repoName = 'caseri-legal-hub';
 
 export default defineConfig(({ command, mode }) => ({
-  base: command === 'build' ? `/${repoName}/` : '/',
+  base: `/${repoName}/`,
   server: {
     host: "::",
     port: 8080,
@@ -18,6 +18,6 @@ export default defineConfig(({ command, mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-    },
+    }
   },
 }));
