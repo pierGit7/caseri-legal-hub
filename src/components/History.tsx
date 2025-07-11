@@ -11,15 +11,15 @@ import Autoplay from "embla-carousel-autoplay";
 
 const historyImages = [
   {
-    src: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200&auto=format&fit=crop",
+    src: "lovable-uploads/lib.png",
     alt: "Libreria dello studio legale",
   },
   {
-    src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",
+    src: "lovable-uploads/outside.png",
     alt: "Esterno dell'edificio dello studio",
   },
   {
-    src: "https://images.unsplash.com/photo-1589994237583-5872a082046e?q=80&w=1200&auto=format&fit=crop",
+    src: "lovable-uploads/sala.png",
     alt: "Martelletto e libri di legge",
   },
 ];

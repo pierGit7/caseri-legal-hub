@@ -15,9 +15,9 @@ const PrivacyPolicy = () => {
             
             <div>
               <h2 className="text-2xl font-serif font-bold text-primary mt-8 mb-4">Titolare del Trattamento dei Dati</h2>
-              <p>Studio Legale Caseri</p>
+              <p>Lorenzo Caseri, Vinicio Caseri</p>
               <p>Via Palma il Vecchio 18, Bergamo(BG) 24128</p>
-              <p><strong>Indirizzo email del Titolare:</strong> caserivinicio@libero.it</p>
+              <p><strong>Indirizzo email del Titolare:</strong> avv.viniciocaseri@outlook.it</p>
             </div>
             
             <div>

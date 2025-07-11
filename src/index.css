@@ -68,4 +68,31 @@
   body {
     @apply bg-background text-foreground font-sans;
   }
+  
+  /* Mobile optimizations */
+  @media (max-width: 640px) {
+    html {
+      scroll-padding-top: 2rem;
+    }
+    
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  
+  /* Prevent horizontal scroll on mobile */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Better touch targets for mobile */
+  @media (max-width: 768px) {
+    button, a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }

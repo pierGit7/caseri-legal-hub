@@ -4,18 +4,17 @@ import React from 'react';
 const professionalsData = [
   {
     name: 'Avv. Vinicio Caseri',
-    title: 'Socio Fondatore',
+    title: 'Fondatore',
     description: `L’avvocato Vinicio Caseri, dopo la laurea in Giurisprudenza conseguita nel 1986 presso l’Università Cattolica del Sacro Cuore di Milano, ha subito iniziato a svolgere l’attività professionale, inizialmente collaborando con primari Studi Legali di Treviglio, per poi fondare lo Studio Legale Caseri.
                   Alla luce dell’ormai quarantennale esperienza, nel 2006 ha ottenuto l’abilitazione a rappresentare i propri assistiti anche innanzi alla Corte di Cassazione ed alle altre Giurisdizioni Superiori.`,
-    image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=800&auto=format&fit=crop',
+    image: 'lovable-uploads/lorenzo_dad.png',
     alt: 'Ritratto di Avv. Mario Rossi',
   },
   {
     name: 'Avv. Lorenzo Caseri',
-    title: 'Partner',
-    description: `L’Avvocato Lorenzo Caseri, dopo aver conseguito la laurea a pieni voti in Giurisprudenza presso l'Università Cattolica del Sacro Cuore di Milano nel gennaio 2022, ha svolto sia la pratica forense presso lo Studio Legale Caseri sia la pratica notarile, presso un importante studio notarile di Milano, in cui ha potuto collaborare con i più importati marchi della moda internazionale, e presso lo Studio Notarile Finardi di Treviglio, con cui ancora collabora.
-                  Nel giugno 2024 ha superato l'esame di abilitazione alla professione forense presso la Corte di Appello di Brescia, risultando idoneo all'esercizio della professione di Avvocato.`,
-    image: 'https://images.unsplash.com/photo-1542740348-395018373b62?q=80&w=800&auto=format&fit=crop',
+    title: '',
+    description: `L’Avvocato Lorenzo Caseri, dopo aver conseguito la laurea a pieni voti in Giurisprudenza presso l'Università Cattolica del Sacro Cuore di Milano nel gennaio 2022, ha svolto sia la pratica forense presso lo Studio Legale Caseri sia la pratica notarile, dapprima presso un importante studio notarile di Milano, interfacciandosi con marchi della moda internazionale, e poi presso primario studio notarile di Treviglio, con cui ancora collabora. Nel giugno 2024 ha superato l'esame di abilitazione alla professione forense presso la Corte di Appello di Brescia, risultando idoneo all'esercizio della professione di Avvocato.`,
+    image: 'lovable-uploads/lorenzo.png',
     alt: 'Ritratto di Avv. Lorenzo Caseri',
   },
 ];
