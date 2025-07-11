@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -52,18 +53,18 @@ const Services = () => {
   }, []);
 
   return (
-    <section id="aree-di-attivita" className="py-20 bg-background">
+    <section id="aree-di-attivita" className="py-12 sm:py-20 bg-background overflow-hidden">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-serif font-bold text-primary mb-4">
+        <h2 className="text-3xl sm:text-4xl font-serif font-bold text-primary mb-4">
           Aree di Attività
         </h2>
-        <div className="w-24 h-1 bg-accent mx-auto mb-12"></div>
-        <div className="max-w-4xl mx-auto mb-12">
+        <div className="w-24 h-1 bg-accent mx-auto mb-8 sm:mb-12"></div>
+        <div className="w-full max-w-4xl mx-auto mb-12">
           <Carousel
             className="w-full"
             opts={{ loop: true }}
           >
-            <CarouselContent className="relative h-[350px] sm:h-[400px]">
+            <CarouselContent className="relative h-[400px] sm:h-[350px] md:h-[400px]">
               {services.map((service, index) => (
                 <CarouselItem 
                   key={index} 
@@ -73,19 +74,19 @@ const Services = () => {
                 >
                   <Card className="w-full h-full border-none overflow-hidden rounded-lg shadow-lg">
                     <CardContent className="flex items-center justify-center p-0 h-full">
-                      <div className="w-full h-full flex flex-col md:flex-row">
-                        <div className="w-full md:w-1/2 h-48 sm:h-64 md:h-full">
+                      <div className="w-full h-full flex flex-col">
+                        <div className="w-full h-48 sm:h-56 md:h-64 flex-shrink-0">
                           <img
                             src={service.image}
                             alt={service.title}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain bg-muted/30 p-4"
                           />
                         </div>
-                        <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-8 flex flex-col justify-center text-left bg-muted/50">
-                          <h3 className="text-xl sm:text-2xl font-serif font-bold text-primary mb-2 sm:mb-3">
+                        <div className="flex-1 p-4 sm:p-6 flex flex-col justify-center text-center bg-muted/50">
+                          <h3 className="text-xl sm:text-2xl font-serif font-bold text-primary mb-3">
                             {service.title}
                           </h3>
-                          <p className="text-sm sm:text-base text-foreground/80">
+                          <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
                             {service.description}
                           </p>
                         </div>
@@ -95,9 +96,25 @@ const Services = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious onClick={() => setCurrentIndex((prevIndex) => (prevIndex - 1 + services.length) % services.length)} />
-            <CarouselNext onClick={() => setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length)} />
+            <div className="hidden sm:block">
+              <CarouselPrevious onClick={() => setCurrentIndex((prevIndex) => (prevIndex - 1 + services.length) % services.length)} />
+              <CarouselNext onClick={() => setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length)} />
+            </div>
           </Carousel>
+          
+          {/* Indicatori per mobile */}
+          <div className="flex justify-center mt-4 space-x-2 sm:hidden">
+            {services.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-2 h-2 rounded-full transition-colors ${
+                  index === currentIndex ? 'bg-accent' : 'bg-muted'
+                }`}
+                aria-label={`Vai al servizio ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
