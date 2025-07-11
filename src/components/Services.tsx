@@ -59,12 +59,12 @@ const Services = () => {
           Aree di Attività
         </h2>
         <div className="w-24 h-1 bg-accent mx-auto mb-8 sm:mb-12"></div>
-        <div className="w-full max-w-4xl mx-auto mb-12">
+        <div className="w-full max-w-5xl mx-auto mb-12">
           <Carousel
             className="w-full"
             opts={{ loop: true }}
           >
-            <CarouselContent className="relative h-[400px] sm:h-[350px] md:h-[400px]">
+            <CarouselContent className="relative h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px]">
               {services.map((service, index) => (
                 <CarouselItem 
                   key={index} 
@@ -74,19 +74,19 @@ const Services = () => {
                 >
                   <Card className="w-full h-full border-none overflow-hidden rounded-lg shadow-lg">
                     <CardContent className="flex items-center justify-center p-0 h-full">
-                      <div className="w-full h-full flex flex-col">
-                        <div className="w-full h-48 sm:h-56 md:h-64 flex-shrink-0">
+                      <div className="w-full h-full flex flex-col md:flex-row">
+                        <div className="w-full md:w-1/2 h-48 sm:h-56 md:h-full flex-shrink-0 flex items-center justify-center bg-muted/30">
                           <img
                             src={service.image}
                             alt={service.title}
-                            className="w-full h-full object-contain bg-muted/30 p-4"
+                            className="w-full h-full md:w-4/5 md:h-4/5 object-contain p-4 md:p-8"
                           />
                         </div>
-                        <div className="flex-1 p-4 sm:p-6 flex flex-col justify-center text-center bg-muted/50">
-                          <h3 className="text-xl sm:text-2xl font-serif font-bold text-primary mb-3">
+                        <div className="flex-1 p-4 sm:p-6 md:p-8 flex flex-col justify-center text-center md:text-left bg-muted/50">
+                          <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-primary mb-3 md:mb-4">
                             {service.title}
                           </h3>
-                          <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
+                          <p className="text-sm sm:text-base md:text-lg text-foreground/80 leading-relaxed">
                             {service.description}
                           </p>
                         </div>
